@@ -46,7 +46,7 @@ jobs:
       # 4. Actualizar Kubernetes
       - name: Conectar al clúster EKS
         run: |
-          aws eks update-kubeconfig --region us-east-1 --name innovatech-cluster
+          aws eks update-kubeconfig --region us-east-1 --name innovatech-eks
 
       # 5. Inyectar secretos de GitHub dentro del archivo YAML
       - name: Configurar secretos en Kubernetes
